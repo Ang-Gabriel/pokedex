@@ -1,0 +1,97 @@
+/* PUXANDO A FONTE DO GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+/* ESTILOS GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fjalla One', sans-serif;
+    /* margin para remover a margem padrão do navegador */
+    /* padding para remover o preenchimento padrão do navegador */
+    /* box-sizing para incluir a borda e o preenchimento no tamanho total do elemento */
+    /* font family para usar a fonte importada do Google Fonts */
+}
+
+/* CENTRALIZANDO O CONTEÚDO E DEFININDO AS PROPRIEDADES DA TAG BODY */
+body {
+    text-align: center;
+    background: linear-gradient(to bottom, #ba90ff, #ffffff);
+    min-height: 100vh;
+    /* text align para centralizar; */
+    /* linear gradient to bottom para o fundo em degrade de cima para baixo */
+    /* min height para ocupar toda a altura da viewport */
+}
+
+/* CHAMANDO A TAG MAIN QUE ESTA NO HTML E DEFININDO SUAS PROPRIEDADES */
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 20px;
+    position: relative;
+    /* background color para a cor do main, é temporario até ser substituido pelo design final do linear gradient */
+    /* inline block para centralizar o main junto do image (a pokedex) */
+    /* margin top para dar um espaço entre o topo da página e o main */
+    /* padding para dar um espaçamento interno ao main entre a parede do navagador e o conteúdo */
+    /* position relative para posicionar o pokemon_image de forma absoluta em relação ao main */
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 430px;
+    /* width para definir a largura da imagem da pokedex */
+    /* max-width para limitar a largura máxima da imagem */
+}
+
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 18%;
+    /* position absolute para posicionar o pokemon_image de forma absoluta em relação ao main */
+    /* transform para ajustar o posicionamento do pokemon_image */
+    /* height para definir a altura do pokemon_image para que nao ultrapasse os limites, ja que os pokemon tem tamanhos diferentes */
+
+    /* os valores devem ser usados em porcentagem pois quando utilizados em pixels, o posicionamento pode variar conforme o tamanho da tela */
+}
+
+.pokemon_data {
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px);
+    /* position absolute para posicionar o pokemon_data de forma absoluta em relação ao main*/
+    /* font weight para deixar o texto mais grosso */
+    /* color para definir a cor do texto */
+    /* top e right para posicionar o pokemon_data no canto superior direito do main */
+    /* font size para ajustar o tamanho do texto com base na largura da tela */
+}
+
+.pokemon_name {
+    color: #3a444d;
+    text-transform:capitalize
+}
+
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+    /* position absolute para posicionar o form de forma absoluta em relação ao main */
+    /* background color para a cor do form, é temporario até ser substituido pelo design final */
+    /* width para definir a largura do form */
+    /* top e left para posicionar o form no canto inferior esquerdo do main */
+}
+
+.input_search {
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+}
