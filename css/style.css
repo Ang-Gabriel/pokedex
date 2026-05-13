@@ -94,4 +94,59 @@ main{
     border-radius: 5px;
     font-weight: 600;
     color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #757575, -5px 7px 0 #333
+    /* width para definir a largura do input */
+    /* padding para dar um espaçamento interno ao input entre a parede do navagador e o conteúdo */
+    /* outline none para remover a borda de foco do input */
+    /* border para definir a borda do input */
+    /* border radius para arredondar os cantos do input */
+    /* font weight para deixar o texto mais grosso */
+    /* color para definir a cor do texto */
+    /* font size para ajustar o tamanho do texto com base na largura da tela */
+    /* box shadow para criar um efeito de sombra no input */
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+    /* position absolute para posicionar os botoes de forma absoluta em relação ao main */
+    /* bottom e left para posicionar os botoes no canto inferior esquerdo do main */
+    /* width para definir a largura dos botoes */
+    /* transform para ajustar o posicionamento dos botoes */
+    /* display flex para organizar os botoes em linha */
+    /* gap para definir o espaçamento entre os botoes */
+}
+
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222, -4px 6px 0 #000;
+    /* width para definir a largura dos botoes */
+    /* padding para dar um espaçamento interno aos botoes entre a parede do navagador e o conteúdo */
+    /* border para definir a borda dos botoes */
+    /* border radius para arredondar os cantos dos botoes */
+    /* font size para ajustar o tamanho do texto com base na largura da tela */
+    /* font weight para deixar o texto mais grosso */
+    /* color para definir a cor do texto */
+    /* background color para a cor de fundo dos botoes */
+    /* box shadow para criar um efeito de sombra nos botoes */
+}
+
+.button:active {
+    box-shadow: inset -4px 4px 0 #222;
+    font-size: 0.9rem;
+    /* box shadow inset para criar um efeito de sombra interna nos botoes quando clicados */
+    /* font size para diminuir o tamanho do texto quando os botoes são clicados */
 }
